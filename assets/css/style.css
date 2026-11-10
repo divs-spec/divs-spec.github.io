@@ -582,3 +582,224 @@ h1 {
     }
 
 }
+/* ------------------------------
+   INNER PAGES
+------------------------------ */
+
+.inner-page {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.page-intro {
+    max-width: 750px;
+    padding: 30px 0 20px;
+}
+
+.page-intro h1 {
+    font-size: clamp(42px, 5.5vw, 65px);
+}
+
+.page-intro > p:last-child {
+    color: var(--text-secondary);
+    max-width: 570px;
+    margin-top: 22px;
+    font-size: 15px;
+}
+
+
+/* ------------------------------
+   EXPERIENCE TIMELINE
+------------------------------ */
+
+.experience-timeline {
+    padding-left: 25px;
+    border-left: 1px solid rgba(139, 156, 255, 0.35);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -32px;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 18px rgba(139, 156, 255, 0.5);
+}
+
+.company-name {
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+.detail-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.experience-list {
+    margin: 15px 0 0 20px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.experience-list li {
+    padding-left: 5px;
+    margin-bottom: 12px;
+}
+
+.page-back {
+    padding-bottom: 20px;
+}
+
+/* CERTIFICATIONS PAGE */
+
+.active-link {
+    color: var(--accent) !important;
+}
+
+.certifications-section {
+    padding-top: 35px;
+}
+
+.certification-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.filter-button {
+    padding: 9px 17px;
+    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.12));
+    border-radius: 30px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(139, 156, 255, 0.08);
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.certificate-card {
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.025);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 156, 255, 0.5);
+}
+
+.certificate-card[hidden] {
+    display: none;
+}
+
+.certificate-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    background: rgba(139, 156, 255, 0.12);
+    color: var(--accent);
+    font-size: 21px;
+}
+
+.certificate-category {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.certificate-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.certificate-provider {
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.certificate-description {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.certificate-date {
+    display: inline-block;
+    color: var(--text-secondary);
+    font-size: 11px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .certification-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-filters {
+        gap: 8px;
+    }
+
+    .filter-button {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+}
+/* Align certification content with the other pages */
+
+.certifications-section.container {
+    width: min(1100px, 90%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-intro.container,
+.page-back.container {
+    width: min(950px, 90%);
+    margin-left: auto;
+    margin-right: auto;
+}

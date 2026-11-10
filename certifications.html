@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certifications & Achievements | Divyani</title>
+    <meta name="description" content="Explore Divyani's certifications, courses, hackathons and learning achievements.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">DS<span>.</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html#about">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="certifications.html" class="active-link">Certifications</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-contact">
+            Let's Connect ↗️
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navLinks">
+            ☰
+        </button>
+    </header>
+
+    <main class="inner-page">
+
+        <section class="page-intro container">
+            <p class="eyebrow">LEARNING • BUILDING • GROWING</p>
+
+            <h1>Certifications & <span class="gradient-text">Achievements.</span></h1>
+
+            <p>
+                A collection of my learning journey, professional development,
+                hackathons and experiences that have helped me grow as a developer.
+            </p>
+        </section>
+
+        <section class="certifications-section container">
+
+            <div class="certification-filters" aria-label="Filter certifications">
+                <button class="filter-button active"
+                        data-filter="all"
+                        aria-pressed="true">All</button>
+
+                <button class="filter-button"
+                        data-filter="professional"
+                        aria-pressed="false">Professional</button>
+
+                <button class="filter-button"
+                        data-filter="coursera"
+                        aria-pressed="false">Coursera</button>
+
+                <button class="filter-button"
+                        data-filter="udemy"
+                        aria-pressed="false">Udemy</button>
+
+                <button class="filter-button"
+                        data-filter="hackathon"
+                        aria-pressed="false">Hackathons</button>
+
+                <button class="filter-button"
+                        data-filter="workshop"
+                        aria-pressed="false">Workshops & Events</button>
+            </div>
+
+            <div class="certification-grid">
+
+                <!-- Replace this example card with a real achievement -->
+                <article class="certificate-card" data-category="professional">
+                    <div class="certificate-icon">✦</div>
+                    <p class="certificate-category">PROFESSIONAL</p>
+                    <h3>Add your certification title</h3>
+                    <p class="certificate-provider">Issuing organisation</p>
+                    <p class="certificate-description">
+                        Add a short description of what you learned or achieved.
+                    </p>
+                    <span class="certificate-date">Year</span>
+                    <!-- Add a real certificate link when available -->
+                </article>
+
+                <article class="certificate-card" data-category="coursera">
+                    <div class="certificate-icon">✦</div>
+                    <p class="certificate-category">COURSERA</p>
+                    <h3>Add your course title</h3>
+                    <p class="certificate-provider">Coursera • Course provider</p>
+                    <p class="certificate-description">
+                        Add the key skills or topics covered in this course.
+                    </p>
+                    <span class="certificate-date">Year</span>
+                </article>
+
+                <article class="certificate-card" data-category="udemy">
+                    <div class="certificate-icon">✦</div>
+                    <p class="certificate-category">UDEMY</p>
+                    <h3>Add your course title</h3>
+                    <p class="certificate-provider">Udemy • Instructor</p>
+                    <p class="certificate-description">
+                        Add the key skills or topics covered in this course.
+                    </p>
+                    <span class="certificate-date">Year</span>
+                </article>
+
+                <article class="certificate-card" data-category="hackathon">
+                    <div class="certificate-icon">⚡</div>
+                    <p class="certificate-category">HACKATHON</p>
+                    <h3>Add your hackathon name</h3>
+                    <p class="certificate-provider">Organiser</p>
+                    <p class="certificate-description">
+                        Add your project, role, and result or achievement.
+                    </p>
+                    <span class="certificate-date">Year</span>
+                </article>
+
+                <article class="certificate-card" data-category="workshop">
+                    <div class="certificate-icon">✧</div>
+                    <p class="certificate-category">WORKSHOP & EVENT</p>
+                    <h3>Add your workshop or event</h3>
+                    <p class="certificate-provider">Organiser</p>
+                    <p class="certificate-description">
+                        Add what you participated in or learned.
+                    </p>
+                    <span class="certificate-date">Year</span>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="page-back container">
+            <a href="index.html" class="text-link">← Back to home</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>©️ <span id="currentYear"></span> Divyani. Built with curiosity and code.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
